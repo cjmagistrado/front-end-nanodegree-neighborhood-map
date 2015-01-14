@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<title>Neighborhood Map Project</title>
+</head>
+
+<body>
+    <div id="search-bar">
+        <form id="search-form">
+            <input id="search" type="text" spellcheck="false" placeholder="Search near Dallas, Texas" autocomplete="off">
+            <button id="search-submit"></button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div id="back-overlay" data-bind="click: back" class="overlay"><div id="back" data-bind="text: setTerm()"></div></div>
+        <div id="place-dtls" class="overlay">
+            <a id="yelp-logo" href="http://yelp.com" target="new"></a>
+            <h1 data-bind="text: setName()"></h1>
+            <div id="place-dtls-subtitle">
+            <span id="place-dtls-review-img-span"><img id="place-dtls-review-img" data-bind="attr: { src : setReviewImg() }" src=""></span>
+            <span data-bind="text: setNumberReviews()"></span>
+            </div>
+            <div id="place-dtls-content">
+                <img id="place-dtls-img" data-bind="attr: { src : setImg() }" width="100%">
+                <p id="place-dtls-text">
+                    <span data-bind="text: setAddress()"></span><br>
+                    <span data-bind="text: setCity()"></span>, 
+                    <span data-bind="text: setState()"></span>
+                    <span data-bind="text: setPostal()"></span><br>
+                    <span>United States</span><br>
+                    <span data-bind="text: setPhone()"></span>
+                </p>
+                <a class="yelp-button" data-bind="attr: { href : setURL() }" href="#" target="new">More info</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-container">
+        <div id="list-overlay" class="overlay">
+            <select id="select-category" data-bind="options: categories()"></select>
+            <a id="yelp-logo" href="http://yelp.com" target="new"></a>
+            <ul id="list"></ul>
+            <div id="pagination-cntrl">
+                <div id="next" data-bind="click: next" onmousedown="return false">NEXT</div>
+                <div id="previous" data-bind="click: previous" onmousedown="return false">PREVIOUS</div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-container">
+        <div id="error-overlay" class="overlay"></div>
+    </div>
+    <div id="map-canvas"></div>
+</body>
+<script src="js/jQuery.js"></script>
+<script src="js/knockout-3.2.0.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpQyiHpFLTrVXwVBwW_k_wIV0YqcphBjg"></script>
+<script src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+<script src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+<script src="js/main.js"></script>
+</html>

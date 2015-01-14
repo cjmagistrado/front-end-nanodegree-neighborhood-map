@@ -272,7 +272,7 @@ var viewModel = function() {
                 
 				var image = data.businesses[self.pageIndex()].image_url;
                 if (image === undefined) {
-                    image = '../img/no-image.png';
+                    image = '../img/no_image.png';
                 }
 			
                 $('#list').append('<li class="item-place" data="'+index()+'">'+
@@ -330,7 +330,7 @@ var viewModel = function() {
         koData.name(dataCache.businesses[id].name);
         var image = dataCache.businesses[id].image_url;
         if (image === undefined) {
-            image = '../img/no-image.png';
+            image = '../img/no_image.png';
         }
         koData.img(image);
         koData.rating_img_url(dataCache.businesses[id].rating_img_url);

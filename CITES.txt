@@ -1,0 +1,8 @@
+http://forums.asp.net/t/1801674.aspx?how+to+create+API+URL+using+some+credentials
+http://stackoverflow.com/questions/2818984/google-map-api-v3-center-zoom-on-displayed-markers
+https://www.iconfinder.com/visualpharm
+http://blog.shamess.info/2009/09/29/zoom-to-fit-all-markers-on-google-maps-api-v3/
+http://grapsus.net/blog/post/Google-API-v3-fit-map-zoom-and-bounds-to-all-markers
+https://www.iconfinder.com/icons/186391/picture%2Cimage%2Cphoto%2Cphotography_icon#size=128
+http://stackoverflow.com/questions/1098040/checking-if-an-array-key-exists-in-a-javascript-object-or-array
+http://css-tricks.com/custom-scrollbars-in-webkit/

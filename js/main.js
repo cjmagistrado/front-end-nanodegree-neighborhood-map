@@ -3,7 +3,7 @@ var globals = {
     current_id : null, 
     markers : [],
     latLngList : []
-}
+};
 
 /* Marker Class */
 var Marker = function(data, id, map) {
@@ -56,6 +56,7 @@ var Marker = function(data, id, map) {
             globals.markers[marker].marker.setMap(map);
         }
     };
+	
     this.removeMarkers = function() {
         self.setAllMap(null);
     };

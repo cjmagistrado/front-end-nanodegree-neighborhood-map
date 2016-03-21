@@ -111,10 +111,10 @@ var viewModel = function() {
 	    
         var auth = {
 
-            consumerKey: "FkkDc_bfzRcY4bh5ckaSPQ",
-            consumerSecret: "M-JWPZ3AXGHK8hD5Lyd0DV2v5ZY",
-            accessToken: "o5f6Z7-Z8o9TKb7H76ikDJGkaMnbQMAO",
-            accessTokenSecret: "he1ssPqWEuh-HOtbAQqiC8N8Xf4",
+            consumerKey: "DTULFzSMB60SQ9wwzjmRdw",
+            consumerSecret: "ns1PLb3WGPB0gapErtZg083J6tk",
+            accessToken: "IFc2xBAt3cs_N6wWJCosnLZSBmtvg16W",
+            accessTokenSecret: "NmZOMDZJ4WwJvkMizMBCwAasMbs",
             serviceProvider: {
                 signatureMethod: "HMAC-SHA1"
             }
